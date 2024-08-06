@@ -1,4 +1,4 @@
-package csu.yulin;
+package csu.yulin.controller;
 
 import csu.yulin.basic.entity.SubjectCategory;
 import csu.yulin.basic.service.SubjectCategoryService;
