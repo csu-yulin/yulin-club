@@ -3,6 +3,8 @@ package csu.yulin.basic.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import csu.yulin.basic.entity.SubjectCategory;
 
+import java.util.List;
+
 /**
  * 针对表【subject_category(题目分类)】的数据库操作Service
  *
@@ -11,4 +13,13 @@ import csu.yulin.basic.entity.SubjectCategory;
  */
 public interface SubjectCategoryService extends IService<SubjectCategory> {
 
+    /**
+     * 查询岗位大类
+     */
+    List<SubjectCategory> queryPrimaryCategory();
+
+    /**
+     * 根据岗位大类id查询下面的分类
+     */
+    List<SubjectCategory> queryCategory(SubjectCategory subjectCategory);
 }
